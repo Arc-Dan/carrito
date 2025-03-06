@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 import mx.itson.carrito.entidades.Carro;
+import mx.itson.carrito.enumTransmision.Transmision;
 import mx.itson.carrito.enums.TipoMotor;
 
 /**
@@ -33,6 +34,7 @@ public class Main
         bmw.setAnio(2021);
         bmw.setKilomatraje(10000);
         bmw.setTipoMotor(TipoMotor.HIBRIDO);
+        bmw.setTransmision(Transmision.AUTOMATICA);
 
 
         

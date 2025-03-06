@@ -4,6 +4,7 @@
  */
 package mx.itson.carrito.entidades;
 
+import mx.itson.carrito.enumTransmision.Transmision;
 import mx.itson.carrito.enums.TipoMotor;
 
 /**
@@ -12,6 +13,20 @@ import mx.itson.carrito.enums.TipoMotor;
  */
 public class Carro
 {
+
+    /**
+     * @return the transmision
+     */
+    public Transmision getTransmision() {
+        return transmision;
+    }
+
+    /**
+     * @param transmision the transmision to set
+     */
+    public void setTransmision(Transmision transmision) {
+        this.transmision = transmision;
+    }
 
     /**
      * @return the tipoMotor
@@ -88,6 +103,7 @@ public class Carro
     private String marca;
     private double kilomatraje;
     private TipoMotor tipoMotor;
+    private Transmision transmision;
         
     /**
      * Calcula el tiempo que el carro tarda en reccorrer una distancia.
